@@ -157,7 +157,7 @@ public class MaterialSpinner extends TextView {
         Object item = adapter.get(position);
         adapter.notifyItemSelected(position);
         setTextColor(textColor);
-        setText(item.toString());
+        setText(adapter.getItemText(position));
         collapse();
         if (onItemSelectedListener != null) {
           //noinspection unchecked
